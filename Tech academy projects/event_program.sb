@@ -1,0 +1,43 @@
+GraphicsWindow.MouseDown = click
+GraphicsWindow.MouseMove = drag
+GraphicsWindow.MouseUp = release
+
+Sub click
+  GraphicsWindow.PenColor = GraphicsWindow.GetRandomColor()
+  A = GraphicsWindow.MouseX
+  B = GraphicsWindow.MouseY
+EndSub
+
+Sub drag
+  X = GraphicsWindow.MouseX
+  Y = GraphicsWindow.MouseY
+  If (Mouse.IsLeftButtonDown) Then
+    GraphicsWindow.DrawLine(A,B,X,Y)
+  EndIf
+EndSub
+
+Sub release
+  GraphicsWindow.PenColor = GraphicsWindow.GetRandomColor()
+EndSub
+
+GraphicsWindow.KeyDown = keydown
+GraphicsWindow.KeyUp = keyup
+GraphicsWindow.FontSize = 20
+GraphicsWindow.DrawText(50,50, "Press any key...")
+
+Sub keydown
+  If GraphicsWindow.LastKey = GraphicsWindow.LastKey Then
+    GraphicsWindow.FontSize = 30
+    GraphicsWindow.DrawText(200,200, "Surprise!")
+  EndIf
+EndSub
+
+Sub keyup
+  If GraphicsWindow.LastKey = GraphicsWindow.LastKey then
+    GraphicsWindow.Clear()
+  EndIf
+EndSub
+
+  
+  
+  

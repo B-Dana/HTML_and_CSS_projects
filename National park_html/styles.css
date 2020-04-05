@@ -1,0 +1,139 @@
+.center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    filter: drop-shadow(8px 8px 10px grey);
+    border-radius: 50px;
+  }
+  footer {
+    text-align: center;
+    font-weight: bold;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  th,td {
+    padding: 20px;
+  }
+  th {
+    background-color: cadetblue;
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+  }
+  .top-center {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: aquamarine;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .navbar a {
+      float: left;
+      display: block;
+      color: blue;
+      text-align: center;
+      padding: 10px 10px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+
+  .navbar a:hover {
+      background-color: lightblue;
+      color: red;
+  }
+
+  .column-container{
+      padding: 10px;
+  }
+
+  .column {
+      float: left;
+      width: 50%;
+      height: 300px;
+      font-size: 18px;
+      color: blue;
+      text-align: left;
+      text-indent: 20px;
+      
+  }
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  p:hover {
+      background-color: lightpink;
+      color: black;
+  }
+
+  .image {
+      width: 100%;
+}
+
+  .photo-container {
+      position: relative;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      width: 50%;
+      height: auto;  
+  }
+
+  .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0.5;
+      transition: .5s ease;
+      background-color: lightskyblue;
+      overflow: hidden;
+  }
+
+  .overlay:hover {
+      opacity: 0;
+  }
+
+  h3 {
+      color: black;
+      font-weight: bold;
+      font-size: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+
+  video {
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    height: auto;  
+}
